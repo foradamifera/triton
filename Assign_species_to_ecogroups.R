@@ -415,7 +415,3 @@ for (i in 1:(nrow(ts))) {
     	if (ts$species[i] == "Zeauvigerina aegyptiaca") ts$ecogroup[i] <- "NA" else
     	if (ts$species[i] == "Zeauvigerina waiparaensis") ts$ecogroup[i] <- "NA	" 
 }
-
-#Let's call this something new, we will come back to it a little later                                            
-                                             
-write_csv(ts, "Triton_Ecogroups.csv")
