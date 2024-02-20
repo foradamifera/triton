@@ -1,12 +1,11 @@
 #Load packspeciess
 library(tidyverse)
 
-setwd("D://Storage//Work Computer//Publications//Publications//D. altispira//Biostrat Paper//")
+#Let's quickly rename it to make things less messy
 
-#Make sure there are columns with the headers "Aze_Speciation" and "Aze_Extinction"
+ts <- triton.trim2
 
-#Read in dataset
-ts <- read_csv("Triton_All.csv")
+#Add a new column with the title ecogroup
 
 ts["ecogroup"] <- NA
 
@@ -416,6 +415,7 @@ for (i in 1:(nrow(ts))) {
     	if (ts$species[i] == "Zeauvigerina aegyptiaca") ts$ecogroup[i] <- "NA" else
     	if (ts$species[i] == "Zeauvigerina waiparaensis") ts$ecogroup[i] <- "NA	" 
 }
-                                            
+
+#Let's call this something new, we will come back to it a little later                                            
                                              
-write_csv(ts, "Triton_All.csv")
+write_csv(ts, "Triton_Ecogroups.csv")
