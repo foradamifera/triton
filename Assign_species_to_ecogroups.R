@@ -1,11 +1,15 @@
 #Load packspeciess
 library(tidyverse)
 
-#Make sure there are columns with the headers "Aze_Speciation" and "Aze_Extinction"
+#Change the dataset name to "df" to make things a little less messy
 
-#Read in dataset
+df <- triton.trim2
+
+#Add a new column with the header "ecogroup"
 
 df["ecogroup"] <- NA
+
+#Assign each species to it's ecogroup
 
 for (i in 1:(nrow(df))) {
     	if (df$species[i] == "Acarinina africana") df$ecogroup[i] <- "1" else
