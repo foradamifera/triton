@@ -1,5 +1,8 @@
+#Add a new column with the header "Bin"
 
 ts["Bin"] <- NA
+
+#Assign each time bin to a numerical "Bin"
 
 for (i in 1:(nrow(ts))) {
   	if (ts$round.age[i] == "0") ts$Bin[i] <- "1" else
