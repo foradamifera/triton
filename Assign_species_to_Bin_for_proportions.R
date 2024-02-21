@@ -1,3 +1,7 @@
+#We'll be using the ecogroup dataset where we removed the species with unknown ecogroups
+
+ts <- cleaned_df
+
 #Add a new column with the header "Bin"
 
 ts["Bin"] <- NA
