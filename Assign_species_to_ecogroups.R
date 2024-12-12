@@ -275,7 +275,7 @@ for (i in 1:(nrow(df))) {
     	if (df$species[i] == "Neogloboquadrina acostaensis") df$ecogroup[i] <- "3" else
     	if (df$species[i] == "Neogloboquadrina dutertrei") df$ecogroup[i] <- "3" else
     	if (df$species[i] == "Neogloboquadrina humerosa") df$ecogroup[i] <- "3" else
-    	if (df$species[i] == "Neogloboquadrina incompta") df$ecogroup[i] <- "5" else
+    	if (df$species[i] == "Neogloboquadrina incompta") df$ecogroup[i] <- "3" else
     	if (df$species[i] == "Neogloboquadrina pachyderma") df$ecogroup[i] <- "5" else
     	if (df$species[i] == "Orbulina suturalis") df$ecogroup[i] <- "3" else
     	if (df$species[i] == "Orbulina universa") df$ecogroup[i] <- "1" else
